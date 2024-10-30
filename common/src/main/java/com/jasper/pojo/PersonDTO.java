@@ -11,8 +11,13 @@ import java.util.List;
  */
 @Data
 public class PersonDTO {
-    private String name;
-    private Integer age;
-    private String high;
-    private List<String> hobbies;
+
+	private String name;
+
+	private Integer age;
+
+	private String high;
+
+	private List<String> hobbies;
+
 }

@@ -13,7 +13,11 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 public class Person {
-    private String name;
-    private Integer age;
-    private List<String> hobby;
+
+	private String name;
+
+	private Integer age;
+
+	private List<String> hobby;
+
 }

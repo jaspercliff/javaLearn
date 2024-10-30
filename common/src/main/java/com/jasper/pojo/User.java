@@ -15,8 +15,13 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-    String firstName;
-    String lastName;
-    String email;
-    List<User> friends;
+
+	String firstName;
+
+	String lastName;
+
+	String email;
+
+	List<User> friends;
+
 }
