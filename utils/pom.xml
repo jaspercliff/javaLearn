@@ -12,7 +12,6 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <org.mapstruct.version>1.6.0</org.mapstruct.version>
   </properties>
 
   <dependencies>
@@ -35,12 +34,9 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.18.34</version>
-      <optional>true</optional>
     </dependency>
-    <dependency>
-      <groupId>org.mapstruct</groupId>
-      <artifactId>mapstruct</artifactId>
-      <version>${org.mapstruct.version}</version>
-    </dependency>
+
   </dependencies>
+
+
 </project>
