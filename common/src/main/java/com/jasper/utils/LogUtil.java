@@ -1,14 +1,12 @@
 package com.jasper.utils;
 
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * @version 1.0
  * @Author jasper
  * @Date 2024-11-05
  */
-@Slf4j
-public class LogUtils {
+public class LogUtil {
     private static final String EMPTY_JSON = "{}";
     private static final String COMMA = ",";
 
