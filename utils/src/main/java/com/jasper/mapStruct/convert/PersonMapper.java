@@ -2,6 +2,7 @@ package com.jasper.mapStruct.convert;
 
 import com.jasper.pojo.Person;
 import com.jasper.pojo.PersonDTO;
+import org.mapstruct.InheritConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
@@ -13,4 +14,5 @@ public interface PersonMapper {
     @Mapping(source = "hobby",target = "hobbies")
     @Mapping(target = "high", ignore = true)
     PersonDTO toPersonDTO(Person person);
+
 }
