@@ -17,6 +17,9 @@ public class DateUtil {
     return  date.with(TemporalAdjusters.lastDayOfMonth());
   }
 
+  public static int getDayOfMonth(LocalDate date){
+    return date.getDayOfMonth();
+  }
   public static Date firstDayOfMonth(Date date){
     Calendar instance = Calendar.getInstance();
     instance.setTime(date);
@@ -32,6 +35,12 @@ public class DateUtil {
     instance.add(Calendar.MONTH,1); //下个月第一天
     instance.add(Calendar.DAY_OF_MONTH,-1);
     return instance.getTime();
+  }
+
+  public static int getDayOfMonth(Date date){
+    Calendar instance = Calendar.getInstance();
+    instance.setTime(date);
+    return instance.get(Calendar.DAY_OF_MONTH);
   }
 
 }

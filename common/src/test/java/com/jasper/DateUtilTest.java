@@ -19,6 +19,8 @@ public class DateUtilTest {
     LocalDate lastDay = DateUtil.LastDayOfMonth(LocalDate.now());
     System.out.println("first= " + firstDay);
     System.out.println("last = " + lastDay);
+    int dayOfMonth = DateUtil.getDayOfMonth(LocalDate.now());
+    System.out.println("dayOfMonth = " + dayOfMonth);
   }
 
   @Test
@@ -27,5 +29,7 @@ public class DateUtilTest {
     System.out.println("first = " + first);
     Date last = DateUtil.LastDayOfMonth(new Date());
     System.out.println("last = " + last);
+    int day = DateUtil.getDayOfMonth(new Date());
+    System.out.println("day = " + day);
   }
 }

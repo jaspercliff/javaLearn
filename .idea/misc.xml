@@ -9,6 +9,9 @@
         <option value="$PROJECT_DIR$/designPattern/pom.xml" />
         <option value="$PROJECT_DIR$/jackson/pom.xml" />
         <option value="$PROJECT_DIR$/test/pom.xml" />
+        <option value="$PROJECT_DIR$/other/pom.xml" />
+        <option value="$PROJECT_DIR$/javaBasic/pom.xml" />
+        <option value="$PROJECT_DIR$/01javaBasic/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
