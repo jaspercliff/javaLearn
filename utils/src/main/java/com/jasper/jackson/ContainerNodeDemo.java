@@ -1,4 +1,4 @@
-package com.jasper;
+package com.jasper.jackson;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;

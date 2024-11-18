@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="designPattern" />
+        <module name="02designPattern" />
         <module name="other" />
-        <module name="jackson" />
         <module name="utils" />
         <module name="01javaBasic" />
+        <module name="generator" />
+        <module name="05spring" />
       </profile>
       <profile name="Annotation profile for common" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -27,7 +28,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="06springboot" target="1.8" />
+      <module name="jackson" target="1.8" />
       <module name="test" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="05spring" options="-parameters" />
+    </option>
   </component>
 </project>

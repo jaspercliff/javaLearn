@@ -1,0 +1,10 @@
+server:
+  port: 9081
+spring:
+  application:
+    name: onlineService
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://49.234.34.109:3307/subEvaluation?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: passwd

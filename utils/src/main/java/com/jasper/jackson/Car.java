@@ -1,7 +1,6 @@
-package com.jasper;
+package com.jasper.jackson;
 
 import lombok.Data;
-import lombok.ToString;
 
 @Data
 public class Car {
