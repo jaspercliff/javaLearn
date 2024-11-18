@@ -13,7 +13,7 @@ public class SkipDemo {
   public static void main(String[] args) {
     List<Integer> list = Arrays.asList(1, 1, 2, 3, 4, 5, 6);
     List<Integer> collect = list.stream().skip(2).collect(Collectors.toList());
-    System.out.println("collect = " + collect);
+    System.out.println("collector = " + collect);
 
 
     List<Integer> list1 = Arrays.asList(1, 1, 2, 3, 4, 5, 6);
