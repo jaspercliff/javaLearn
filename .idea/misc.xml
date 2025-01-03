@@ -16,12 +16,15 @@
         <option value="$PROJECT_DIR$/02designPattern/pom.xml" />
         <option value="$PROJECT_DIR$/06springboot/pom.xml" />
         <option value="$PROJECT_DIR$/generator/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/06springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/generator/pom.xml" />
         <option value="$PROJECT_DIR$/jackson/pom.xml" />
+        <option value="$PROJECT_DIR$/other/pom.xml" />
         <option value="$PROJECT_DIR$/test/pom.xml" />
       </set>
     </option>
