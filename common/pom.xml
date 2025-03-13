@@ -16,6 +16,19 @@
     </properties>
 
     <dependencies>
+        <!-- Logback Classic (日志实现) -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.5.17</version> <!-- 请根据需要选择版本 -->
+        </dependency>
+
+        <!-- Logback Core (日志核心库) -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.5.17</version> <!-- 请根据需要选择版本 -->
+        </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
