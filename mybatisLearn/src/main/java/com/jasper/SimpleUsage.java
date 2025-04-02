@@ -19,8 +19,8 @@ public class SimpleUsage {
         try (SqlSession session = sqlSessionFactory.openSession()) {
             SystemNoticeMapper mapper = session.getMapper(SystemNoticeMapper.class);
             SystemNotice systemNotice = mapper.selectSystemNoticeById(1);
-            SystemNotice systemNotice1 = mapper.selectById(2);
             System.out.println(systemNotice.getTitle());
+            SystemNotice systemNotice1 = mapper.selectById(2);
             System.out.println(systemNotice1.getTitle());
         }
     }
