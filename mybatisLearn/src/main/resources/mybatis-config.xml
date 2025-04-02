@@ -22,6 +22,7 @@
     </environments>
     <mappers>
         <mapper resource="com/jasper/mapper/SystemNoticeMapper.xml"/>
+        <mapper resource="com/jasper/mapper/UsersMapper.xml"/>
     </mappers>
 
 </configuration>
