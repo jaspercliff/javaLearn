@@ -9,10 +9,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring" />
         <module name="javaBasic" />
-        <module name="jdbcLearn" />
-        <module name="utils" />
         <module name="designPattern" />
         <module name="jvmLearn" />
+        <module name="jdbcLearn" />
+        <module name="utils" />
       </profile>
       <profile name="Annotation profile for common" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -33,7 +33,6 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
         </processorPath>
-        <module name="mybatisLearn" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -42,6 +41,7 @@
       <module name="datastructures" target="1.8" />
       <module name="generator" target="1.8" />
       <module name="jackson" target="1.8" />
+      <module name="mybatisLearn" target="1.8" />
       <module name="other" target="1.8" />
       <module name="test" target="1.8" />
     </bytecodeTargetLevel>

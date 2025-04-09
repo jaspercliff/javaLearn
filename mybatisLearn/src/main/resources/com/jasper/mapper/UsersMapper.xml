@@ -7,7 +7,7 @@
     <sql id="baseColumnList">
         ${alias}.id
     </sql>
-    
+
     <sql id="someTable">
         ${tableName}
     </sql>
@@ -16,6 +16,14 @@
         from
           <include refid="${includeTarget}"/>
     </sql>
+
+    <insert id="insertUsers" parameterType="com.jasper.pojo.Users">
+       insert into users values(null,#{name}, #{age}, #{city})
+    </insert>
+
+    <insert id="insertUsersWithParam" parameterType="com.jasper.pojo.Users">
+        insert into users values(null,#{user.name}, #{user.age}, #{user.city})
+    </insert>
 
     <select id="selectUsersAndHobbies" resultType="hashmap">
         select

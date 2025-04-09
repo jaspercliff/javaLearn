@@ -8,7 +8,7 @@ package com.jasper.string;
 public class Usage {
   public static void main(String[] args) {
     String a = "s";
-    String repeat = a.repeat(3);
-    System.out.println(repeat);
+//    String repeat = a.repeat(3);
+//    System.out.println(repeat);
   }
 }
