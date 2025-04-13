@@ -26,14 +26,6 @@
         </processorPath>
         <module name="common" />
       </profile>
-      <profile name="Annotation profile for mybatis" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
-        </processorPath>
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="06springboot" target="1.8" />
@@ -41,7 +33,6 @@
       <module name="datastructures" target="1.8" />
       <module name="generator" target="1.8" />
       <module name="jackson" target="1.8" />
-      <module name="mybatisLearn" target="1.8" />
       <module name="other" target="1.8" />
       <module name="test" target="1.8" />
     </bytecodeTargetLevel>

@@ -33,7 +33,6 @@
         <option value="$PROJECT_DIR$/datastructures/pom.xml" />
         <option value="$PROJECT_DIR$/generator/pom.xml" />
         <option value="$PROJECT_DIR$/jackson/pom.xml" />
-        <option value="$PROJECT_DIR$/mybatisLearn/pom.xml" />
         <option value="$PROJECT_DIR$/other/pom.xml" />
         <option value="$PROJECT_DIR$/test/pom.xml" />
       </set>
