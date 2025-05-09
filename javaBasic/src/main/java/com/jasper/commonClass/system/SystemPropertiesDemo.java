@@ -1,4 +1,4 @@
-package com.jasper.basic.other;
+package com.jasper.commonClass.system;
 
 public class SystemPropertiesDemo {
     public static void main(String[] args) {

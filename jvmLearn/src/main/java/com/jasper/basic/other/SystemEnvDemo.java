@@ -1,8 +1,11 @@
 package com.jasper.basic.other;
 
-public class SystemPropertiesDemo {
+/**
+ *  获取环境变量
+ */
+public class SystemEnvDemo {
     public static void main(String[] args) {
-        System.getProperties().forEach((k, v)
+        System.getenv().forEach((k, v)
                 -> System.out.println(k + " = " + v));
     }
 }

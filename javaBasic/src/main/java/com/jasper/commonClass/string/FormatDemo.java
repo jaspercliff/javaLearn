@@ -1,4 +1,4 @@
-package com.jasper.string;
+package com.jasper.commonClass.string;
 
 /**
  * @Author jasper @Date 2024-11-18
