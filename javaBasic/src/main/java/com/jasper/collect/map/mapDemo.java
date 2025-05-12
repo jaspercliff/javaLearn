@@ -28,7 +28,7 @@ public class mapDemo {
     while (iterator.hasNext()) {
       String s = iterator.next();
       Integer o = (Integer) map.get(s);
-      Double value = o * 0.95;
+      double value = o * 0.95;
       temp += value;
       if (!iterator.hasNext()) {
         double temp1 = 7 - temp;
