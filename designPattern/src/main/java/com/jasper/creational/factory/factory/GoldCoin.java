@@ -1,4 +1,4 @@
-package com.jasper.factory;
+package com.jasper.creational.factory.factory;
 
 public class GoldCoin implements Coin {
     static final String DESCRIPTION = "this is gold coin";

@@ -1,4 +1,4 @@
-package com.jasper.signle;
+package com.jasper.creational.signle;
 
 import java.util.function.Supplier;
 

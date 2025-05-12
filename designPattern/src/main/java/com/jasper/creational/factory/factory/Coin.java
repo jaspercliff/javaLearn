@@ -1,4 +1,4 @@
-package com.jasper.factory;
+package com.jasper.creational.factory.factory;
 
 public interface Coin {
     String getDescription();

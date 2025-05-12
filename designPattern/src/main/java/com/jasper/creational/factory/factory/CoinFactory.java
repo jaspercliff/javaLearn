@@ -1,4 +1,4 @@
-package com.jasper.factory;
+package com.jasper.creational.factory.factory;
 
 public class CoinFactory {
     public static Coin getInstance(CoinType type) {
