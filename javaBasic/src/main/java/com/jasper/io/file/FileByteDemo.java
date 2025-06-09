@@ -3,12 +3,11 @@ package com.jasper.io.file;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
 @Slf4j
-public class FileDemo2 {
+public class FileByteDemo {
     public static void main(String[] args) {
         try (FileInputStream fileInputStream = new FileInputStream("/Users/jasper/IdeaProjects/person/javaLearn/javaBasic/src/main/java/com/jasper/io/doc/1.jpeg");
              final FileOutputStream fileOutputStream = new FileOutputStream("/Users/jasper/IdeaProjects/person/javaLearn/javaBasic/src/main/java/com/jasper/io/doc/2.jpeg")
@@ -20,6 +19,5 @@ public class FileDemo2 {
         }catch (IOException e) {
             log.error(e.getMessage());
         }
-
     }
 }
