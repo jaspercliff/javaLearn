@@ -20,4 +20,8 @@ public class Person {
 
 	private List<String> hobby;
 
+	public Person(String name, Integer age) {
+		this.name = name;
+		this.age = age;
+	}
 }
