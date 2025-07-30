@@ -4,11 +4,11 @@ import com.jasper.pojo.Person;
 import com.jasper.pojo.PersonDTO;
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
+import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-05-11T10:48:15+0800",
+    date = "2025-07-30T17:42:18+0800",
     comments = "version: 1.6.0, compiler: javac, environment: Java 23.0.2 (Oracle Corporation)"
 )
 public class PersonMapperImpl implements PersonMapper {
