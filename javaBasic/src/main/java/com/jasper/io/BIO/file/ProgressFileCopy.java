@@ -60,6 +60,7 @@ public class ProgressFileCopy {
     }
 
     public static void main(String[] args) {
+        // 50 mb test
         String src = "/Users/jasper/IdeaProjects/person/javaLearn/javaBasic/src/main/java/com/jasper/io/doc/bio/smartsvn-aarch64-14_5_0.dmg";
         String dest = "/Users/jasper/IdeaProjects/person/javaLearn/javaBasic/src/main/java/com/jasper/io/doc/bio/test.dmg";
         long start = System.currentTimeMillis();

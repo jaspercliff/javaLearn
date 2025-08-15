@@ -1,8 +1,11 @@
-package com.jasper.io;
+package com.jasper.io.BIO;
 
 import java.io.*;
 import java.util.Properties;
 
+/**
+ * 底层持久化属于 BIO
+ */
 public class PropertiesDemo {
     public static void main(String[] args) throws FileNotFoundException {
         final Properties properties = new Properties();
