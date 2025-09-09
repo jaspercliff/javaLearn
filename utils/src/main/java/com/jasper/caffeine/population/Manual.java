@@ -3,6 +3,7 @@ package com.jasper.caffeine.population;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 import com.jasper.pojo.Person;
+import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
 import java.util.concurrent.TimeUnit;
@@ -10,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class Manual {
     public static void main(String[] args) {
         int num = 10_000;
-        final Cache<Object, @Nullable Person> cache = Caffeine.newBuilder()
+        final Cache<@NonNull Object, @Nullable Person> cache = Caffeine.newBuilder()
                 .expireAfterWrite(10, TimeUnit.MINUTES)
                 .maximumSize(num).build();
         // 查找缓存 没有则返回null
