@@ -1,23 +1,23 @@
 package com.jasper.juc.future;
 
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.FutureTask;
+import java.util.concurrent.*;
 
 public class FutureDemo {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        Future<Integer> future = executorService.submit(() -> {
+            try {
+                TimeUnit.SECONDS.sleep(5);
+                return 42;
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        });
+        System.out.println("submit complete");
 
-        final Callable<Integer> callable = () -> {
-            Thread.sleep(2000);
-            return 42;
-        };
-        final FutureTask<Integer> futureTask = new FutureTask<>(callable);
-        final Thread thread = new Thread(futureTask);
-        thread.start();
-
-        futureTask.cancel(true);
-        // System.out.println(futureTask.get());// 阻塞
-        System.out.println(futureTask.isDone());
-        System.out.println(futureTask.isCancelled());
+//        阻塞获取
+        Integer i = future.get();
+        System.out.println("i = " + i);
+        executorService.shutdown();
     }
 }
