@@ -6,7 +6,7 @@ import com.jasper.pojo.Person;
 
 import java.util.concurrent.TimeUnit;
 
-public class AutoMatic {
+public class Loading {
 public static void main(String[] args) {
         int num = 10_000;
     final LoadingCache<Object, Person> loadingCache = Caffeine.newBuilder().

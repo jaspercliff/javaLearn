@@ -6,6 +6,7 @@ import com.jasper.pojo.Person;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
+import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.TimeUnit;
 
 public class Manual {
@@ -27,6 +28,17 @@ public class Manual {
         // 移除缓存
         cache.invalidate(3);
         System.out.println("invalidate person3 = " + person3);
+
+        // 返回concurrentHashMap  调试 监控 批量操作
+        final ConcurrentMap<@NonNull Object, Person> concurrentHashMap = cache.asMap();
+        concurrentHashMap.forEach((c, person) -> {
+            System.out.println("key = "+c+" person = " + person);
+        });
+
+        final Person person = concurrentHashMap.get(2);
+        person.setAge(18);
+
+        System.out.println(cache.getIfPresent(2));
     }
 
 
