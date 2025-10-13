@@ -14,6 +14,8 @@ public class AsyncManual {
                 .maximumSize(100).buildAsync();
             cache.put("1", CompletableFuture.completedFuture("jasper"));
         final CompletableFuture<@NonNull Object> key1 = cache.getIfPresent("1");
+        final CompletableFuture<Object> key2 = cache.get("2", (key) -> key+ "cliff");
         System.out.println("key1 = " + key1.join());
+        System.out.println("key2 = " + key2.join());
     }
 }
