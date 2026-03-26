@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jasper.mapper.UsersMapper">
+
+    <sql id="baseColumnList">
+        ${alias}.id
+    </sql>
+
+    <sql id="someTable">
+        ${tableName}
+    </sql>
+
+    <sql id="someInclude">
+        from
+          <include refid="${includeTarget}"/>
+    </sql>
+
+    <insert id="insertUsers" parameterType="com.jasper.pojo.Users">
+       insert into users values(null,#{name}, #{age}, #{city})
+    </insert>
+
+    <insert id="insertUsersWithParam" parameterType="com.jasper.pojo.Users">
+        insert into users values(null,#{user.name}, #{user.age}, #{user.city})
+    </insert>
+
+    <select id="selectUsersAndHobbies" resultType="hashmap">
+        select
+        <include refid="baseColumnList"><property name="alias" value="t1"/></include>,
+        <include refid="baseColumnList"><property name="alias" value="t2"/></include>,
+        t1.name,t2.hobby_name
+        from users t1
+        cross join hobbies t2
+    </select>
+
+    <select id="selectUsersById" resultType="com.jasper.pojo.Users">
+        select *
+        <include refid="someInclude">
+            <property name="tableName" value="users"/>
+            <property name="includeTarget" value="someTable"/>
+        </include>
+        where id = #{id}
+    </select>
+</mapper>
